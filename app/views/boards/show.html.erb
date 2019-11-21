@@ -1,0 +1,7 @@
+<h1><%= @board.name %></h1>
+# Enter in list or link to lists from boards?
+
+<%= link_to 'Add Board', new_board_path %>
+<%= link_to 'Edit Board', edit_board_path(@board) %>
+<%= link_to 'Delete Board', board_path(@board), method: :delete %>
+<%= link_to "Back", boards_path %>
