@@ -1,12 +1,19 @@
-<nav class="nav-extended">
-  <div class="nav wrapper">
-    <h1> Your Boards </h1>
-    <div-class="nav-content">
-    <ul class="tabs tabs-transparent">
-      <li class="tab"> <%= link_to "Add Board", new_board_path %>
-      <li class="tab"> <%= link_to "Delete Board", boards_path, method: :delete %>
-      <li class="tab"> <%= link_to "Log Out", delete_user_session, method: delete %>
+<nav class="grey lighten-1">
+  <div class="container">
+
+  <h5 class="brand-logo left"> Trollo (kinda)</h5>
+
+    <ul class="right hide-on-med-and-down">
+
+      <li class="tab"> <%= link_to "Boards", boards_path %> </li>
+
+      <li class="tab"> <%= link_to "Lists", lists_path %> 
+
+      <li class="tab"> <%= link_to "Log Out", boards_path, method: :delete %>
+
+      </li>
+
     </ul>
-    </div>
-  </div>
+
+</div>
 </nav>

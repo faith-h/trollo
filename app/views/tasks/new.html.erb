@@ -1,0 +1,11 @@
+<h1>Add A Task</h1>
+<%= form_with(model: [@list, @task], local: true, class: "ui form") do |f| %>
+  <%= f.label :name %>
+  <%= f.text_area :name, required: true, autofocus: true, placeholder: "Task" %>
+  <br />
+  <%= f.label :desc %>
+  <%= f.text_field :desc, placeholder: "Description (optional)" %>
+  <br />
+  <br />
+  <%= f.submit nil, class: "ui button blue" %>
+<% end %>
